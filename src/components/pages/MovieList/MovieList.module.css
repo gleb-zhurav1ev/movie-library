@@ -1,0 +1,27 @@
+.movie-list-container {
+	display: flex;
+	flex-direction: column;
+	margin: 2% 0 2% 0;
+}
+
+.movie-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 3%;
+}
+
+.movie-card-link {
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.2s ease-in-out;
+}
+
+.movie-card-link:hover {
+	transform: scale(1.05);
+}
+
+.pagination-container {
+	margin: 10px 0 10px 0;
+	align-self: center;
+}

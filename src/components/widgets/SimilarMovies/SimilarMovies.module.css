@@ -1,0 +1,78 @@
+.carousel__button {
+	background-color: rgba(255, 255, 255, 0.626);
+	border: none;
+	color: black;
+	font-size: 30px; /* Увеличиваем размер кнопки */
+	padding: 12px 20px; /* Увеличиваем отступы */
+	cursor: pointer;
+	outline: none;
+	transition: background-color 0.3s ease;
+}
+
+.carousel__button:hover {
+	background-color: rgb(255, 255, 255);
+}
+
+.carousel__button > svg {
+	font-size: 24px; /* Увеличиваем размер иконок внутри кнопки */
+}
+
+.carousel__controls {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 10px;
+	width: 99%;
+	z-index: 2;
+}
+
+.similar__movies__carousel {
+	width: 99vw;
+	margin: 20px 0;
+	overflow-x: auto;
+	text-align: center;
+	position: relative;
+}
+
+.similar__movies__container {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.similar__movies__container::-webkit-scrollbar {
+	display: none;
+}
+
+.similar__movies {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.similar__movies a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.similar__movies a:hover {
+	text-decoration: underline;
+}
+
+.similar__label {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.similar__movies > :first-child {
+	margin-left: 25px;
+}
+
+.similar__movies > :last-child {
+	padding-right: 25px;
+}
